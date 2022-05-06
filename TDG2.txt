@@ -1,0 +1,43 @@
+class TDG2{
+    String s(){
+        String[]e="X lecture about my workload.\nXTwo problem sets\nAnd aXThree rough draftsX
+        Four hundred emailsXFive Shakespeare plays!XSix chapters' readingXSeven lab reportsX
+        Eight examinationsXNine performance skitsXTen Practice ProblemsXEleven vocab listsX
+        Twelve lunch detentionsXfirstXsecondXthirdXfourthXfifthXsixthXseventhXeighthXninthXtenthXeleventhX
+        twelfth".split("X");
+        for(int i=1;i<13;)
+            e[0]+="On the "+e[i+12]+" day of Christmas, my teacher gave to me\n"+(i<2?"A":"")+
+            (e[i]+=(i!=2?"\n":"")+e[i++-1]);
+        return e[0];
+    }
+}
+
+
+
+
+
+
+
+/*class TDG2{
+    String s(){
+        String[]e="On the X day of Christmas, my teacher gave to me\nXX lecture about my workload.\nXTwo problem sets\nAnd aXThree rough draftsXFour hundred emailsXFive Shakespeare plays!XSix chapters' readingXSeven lab reportsXEight examinationsXNine performance skitsXTen Practice ProblemsXEleven vocab listsXTwelve lunch detentionsXfirstXsecondXthirdXfourthXfifthXsixthXseventhXeighthXninthXtenthXeleventhXtwelfth".split("X");
+        for(int i=3;i<15;)e[2]+=e[0]+e[i+12]+e[1]+(i<4?"A":"")+(e[i]+=(i!=4?"\n":"")+e[i++-1]);
+        return e[2];
+    }
+}
+*/
+
+
+
+
+
+
+/*class TDG{
+    String s(){
+        String[]e="On the X day of Christmas, my teacher gave to me\nXX lecture about my workload.\nXTwo problem sets\nAnd aXThree rough draftsXFour hundred emailsXFive Shakespeare plays!XSix chapters' readingXSeven lab reportsXEight examinationsXNine performance skitsXTen Practice ProblemsXEleven vocab listsXTwelve lunch detentionsXfirstXsecondXthirdXfXfifXsXsXeXnXtXeXtwelf".split("X");
+        int[]n={4,1,3,5,4,3,3,6,1};
+        for(int i=3;i<15;)e[2]+=e[0]+e[i+12]+(i>5?e[i].substring(1,n[i-6])+"th":"")+e[1]+(i<4?"A":"")+(e[i]+=(i!=4?"\n":"")+e[i++-1]);
+        return e[2];
+    }
+}
+*/

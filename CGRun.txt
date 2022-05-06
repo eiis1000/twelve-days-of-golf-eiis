@@ -1,0 +1,6 @@
+class CGRun{
+    public static void main(String[] args) {
+        TDG myTDG = new TDG();
+        System.out.print(myTDG.s());
+    }
+}
